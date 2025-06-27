@@ -82,9 +82,9 @@ def main():
         st.write('Based on the information provided')
         predict = model.predict(input_data)
         if predict == 1:
-            st.error('The client will churn')
+            st.error('The client will probably churn')
         else:
-            st.success('The client will likely stay')
+            st.success('The client will probably stay')
 
 
 main()
